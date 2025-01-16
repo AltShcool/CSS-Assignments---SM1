@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novus Watch</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #b5b2d3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            position: relative;
+            background-color: white;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .banner {
+            position: absolute;
+            top: 10px;
+            left: -10px;
+            background-color: #f8e89b;
+            border-radius: 10px 50px 50px 10px;
+            font-weight: bold;
+            padding: 8px 10px;
+            text-align: center;
+        }
+
+        .image-section {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .image-section img {
+            border-radius: 10px 10px 0 0;
+        }
+
+        .text-section {
+            padding: 20px;
+        }
+
+        .text-section h1 {
+            margin-bottom: 15px;
+        }
+
+        .text-section small {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .text-section p {
+            font-weight: bold;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">New and Improved!</div>
+        <div class="image-section">
+            <img src="media/watch.png" alt="Novus Watch" width="100%">
+        </div>
+        <div class="text-section">
+            <h1>Novus Watch <small>Series IV</small></h1>
+            <p>The pinnacle of fashion and tech. This wearable piece is an homage to gilded palaces and minimal regalia, combining nouveau-deco and brutalism influences in a compact, Swiss-made watch.</p>
+        </div>
+    </div>
+</body>
+</html>
