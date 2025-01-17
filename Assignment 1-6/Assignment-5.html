@@ -241,9 +241,10 @@
       }
 
       .renewal-text {
-        color: rgba(255, 255, 255, 0.8);
+        color: #ffffffcc;
         font-style: italic;
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 400;
         margin-bottom: 30px;
       }
 
@@ -275,23 +276,34 @@
       }
 
       .switch-plan {
-        margin: 30px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        word-spacing: 2px;
+        margin: 40px 0;
         font-size: 15px;
       }
 
       .switch-plan a {
         color: white;
-        text-decoration: underline;
+        text-decoration: underline 3px solid #B9F5FF;
       }
+/* 
+      .switch-plan p:nth-child(2) {
+        width: fit-content;
+        border-bottom: 
+      } */
 
       .testimonial {
-        margin-top: 40px;
+        border-top: 1px solid #b9f4ff82;
+        padding-top: 40px;
         font-style: italic;
-        font-size: 14px;
+        font-size: 18px;
         line-height: 1.5;
       }
 
       .testimonial-author {
+        font-style: normal;
         display: flex;
         align-items: center;
         gap: 10px;
@@ -416,7 +428,7 @@
         </div>
         <div class="sidebar">
           <h3>Freelancer</h3>
-          <div class="price"><sup>$</sup>99<span>/year</span></div>
+          <div class="price"><sup>$</sup>99<span>/ year</span></div>
           <div class="renewal-text">Automatically renews after 1 year</div>
 
           <ul class="features">
@@ -426,13 +438,13 @@
           </ul>
 
           <div class="switch-plan">
-            Need 20 client sites?<br />
-            <a href="#">Switch to the Agency plan</a>
+            <p>Need <strong>20</strong> client sites?</p>
+            <p><a href="#">Switch to the <em>Agency</em> plan</a></p>
           </div>
 
           <div class="testimonial">
             <p>
-              FTP is horrible to deal with. WP Pusher solves that issue, and the
+              FTP is horrible to deal with. <strong>WP Pusher</strong> solves that issue, and the
               customer support is awesome!
             </p>
             <div class="testimonial-author">
@@ -445,7 +457,7 @@
     </div>
 
     <div class="footer">
-      © 2018 WP Pusher IVS • <a href="#">Terms of Service</a>
+      © 2018 WP Pusher IVS • <a href="#" style="color: #1D2C3C;">Terms of Service</a>
     </div>
   </body>
 </html>
