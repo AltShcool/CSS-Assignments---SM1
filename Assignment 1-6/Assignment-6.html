@@ -98,9 +98,23 @@
         line-height: 96px;
       }
 
+      .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero-content .hero-text {
+        text-align: center;
+        margin: 1rem;
+        width: 781px;
+        height: 105px;
+      }
+
       .highlight {
         position: relative;
-        color: #007bff;
+        color: #005ae2;
       }
 
       .highlight img {
@@ -114,6 +128,7 @@
       .btn {
         padding: 12px 24px;
         border: none;
+        border-radius: 50px;
         cursor: pointer;
         font-weight: bold;
       }
@@ -124,8 +139,8 @@
       }
 
       .btn-secondary {
-        background-color: white;
-        border: 1px solid #007bff;
+        /* background-color: white;
+        border: 1px solid #007bff; */
         color: #007bff;
       }
 
@@ -189,11 +204,14 @@
         <h1>
           Optimize Your Online Experience with Our<br />
           Advanced
-          <span class="highlight"> <img src="media/line.png" alt="line"> URL Shortening </span
+          <span class="highlight">
+            <img src="media/line.png" alt="line" /> URL Shortening </span
           >Solution
         </h1>
-        <p>
-          Personalize your shortened URLs to align with your brand identity...
+        <p class="hero-text">
+          Personalize your shortened URLs to align with your brand identity.
+          Utilize custom slugs, branded links, and domain customization options
+          to reinforce your brand presence and enhance user engagement.
         </p>
         <div class="hero-buttons">
           <button class="btn btn-primary">Sign Up</button>
