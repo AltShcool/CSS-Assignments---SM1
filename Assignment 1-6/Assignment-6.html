@@ -16,13 +16,16 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Scissor - URL Shortener</title>
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
+        font-family: "Poppins", "Montserrat", sans-serif;
       }
 
       body {
@@ -91,6 +94,7 @@
       .hero {
         text-align: center;
         padding: 60px;
+        padding-bottom: 0px;
       }
 
       .hero h1 {
@@ -171,14 +175,38 @@
       }
 
       .stats {
+        background-color: #F9FBFD;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         gap: 30px;
-        padding: 40px;
+        padding: 60px 140px;
+      }
+
+      .stat-caption {
+        font-size: 40px;
+        font-weight: bold;
+      }
+
+      .stat-caption p span {
+        color: #005AE2;
+      }
+
+      .items {
+        display: flex;
+        gap: 30px;
       }
 
       .stat-item h2 {
-        color: #007bff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 32px;
+        font-weight: 500;
+      }
+
+      .stat-item p {
+        width: 160px;
+        font-weight: 300;
+        font-size: 16px;
+        color: #141414;
       }
 
       .pricing-cards {
@@ -253,6 +281,11 @@
 
     <!-- Statistics Section -->
     <section class="stats">
+      <div class="stat-caption">
+        <p>One Stop.</p>
+        <p>Four <span>Possibilities</span></p>
+      </div>
+      <div class="items">
       <div class="stat-item">
         <h2>3M</h2>
         <p>Active users</p>
@@ -269,6 +302,7 @@
         <h2>300k</h2>
         <p>App Integrations</p>
       </div>
+    </div>
     </section>
 
     <!-- Features Section-->
