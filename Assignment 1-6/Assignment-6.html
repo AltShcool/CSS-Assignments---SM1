@@ -149,12 +149,25 @@
       }
 
       .hero-image {
+        position: relative;
         margin-top: 50px;
       }
 
-      .hero-image img {
-        width: 100%;
+      .hero-image img:first-child {
+        width: 768px;
         height: 224px;
+      }
+      .hero-image img:nth-child(2) {
+        position: absolute;
+        top: -12px;
+        left: 340px;
+        width: 238.55px;
+        height: 251.2px;
+        z-index: -1;
+      }
+      .hero-image img:last-child {
+        margin-top: 20px;
+        height: 93px;
       }
 
       .stats {
@@ -232,6 +245,8 @@
         </div>
         <div class="hero-image">
           <img src="media/USL.png" alt="URL Shortening Illustration" />
+          <img src="media/blob.png" alt="blob" />
+          <img src="media/disk.png" alt="disk" />
         </div>
       </div>
     </section>
