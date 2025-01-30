@@ -209,10 +209,22 @@
         color: #141414;
       }
 
-      .features h2 {
-        text-align: center;
-        border-left: 5px solid linear-gradient(to bottom, #005ae2 0%, #00a2e8 100%);
-        margin: 5rem;
+      .features .cap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 60px;
+      }
+
+      .features .cap h2 {
+        font-size: 40px;
+      }
+
+      .features .cap>span {
+        height: 48px;
+        width: 5px;
+        background: linear-gradient(to top, #4D6B8800 0%, #112232 100%);
       }
 
       .pricing-cards {
@@ -289,7 +301,7 @@
     <section class="stats">
       <div class="stat-caption">
         <p>One Stop.</p>
-        <p>Four <span>Possibilities</span></p>
+        <p>Four <span>Possibilities</span>.</p>
       </div>
       <div class="items">
       <div class="stat-item">
@@ -313,7 +325,10 @@
 
     <!-- Features Section-->
     <section class="features">
-      <h2>Why Choose <span class="highlight">Scissors</span></h2>
+      <div class="cap">
+        <span></span>
+        <h2>Why Choose <span class="highlight">Scissors</span></h2>
+      </div>
       <div class="feature-container">
         <div class="feature">
           <h3>🔗 URL Shortening</h3>
